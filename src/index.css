@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #050505;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif; /* Clean modern font for your portfolio data */
+  
+  /* HIDE SCROLLBARS GLOBALLY */
+  overflow-x: hidden; 
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none; 
+}
+
+/* Stranger Things Glowing Text Effect for your Name */
+.stranger-text {
+  font-family: "Baskerville Old Face", serif;
+  color: transparent;
+  -webkit-text-stroke: 1px #ed1c24;
+  text-shadow: 0 0 15px rgba(237, 28, 36, 0.6);
+  letter-spacing: 0.2em;
+}
