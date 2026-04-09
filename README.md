@@ -1,10 +1,8 @@
-
-````markdown
-# 🌌 Aditya Yadav | Interactive Cinematic Portfolio
+#  Aditya Yadav | Interactive Cinematic Portfolio
 
 > A highly immersive, narrative-driven personal portfolio built to bridge the gap between advanced web engineering and cinematic storytelling. 
 
-🔗 **[ENTER THE PORTAL (Live Demo)](#)** *(<-- Paste your live Vercel/Netlify link here!)*
+🔗 **[Live Demo:](#)**  *https://aditya-yadav-dev.vercel.app/*
 
 ![Portfolio Theme](https://img.shields.io/badge/Theme-Sci--Fi%20%2F%20Cinematic-ed1c24?style=for-the-badge)
 ![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20GSAP%20%7C%20Vite-blue?style=for-the-badge)
@@ -36,7 +34,6 @@ Want to explore the Upside Down locally? Follow these steps:
    ```bash
    git clone [https://github.com/Aadityya07/interactive-portfolio.git](https://github.com/Aadityya07/interactive-portfolio.git)
    cd interactive-portfolio
-````
 
 2.  **Install dependencies**
 
