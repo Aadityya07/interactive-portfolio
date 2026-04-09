@@ -1,6 +1,4 @@
-
-````markdown
-# 🌌 Aditya Yadav | Interactive Cinematic Portfolio
+#  Aditya Yadav | Interactive Cinematic Portfolio
 
 > A highly immersive, narrative-driven personal portfolio built to bridge the gap between advanced web engineering and cinematic storytelling. 
 
@@ -36,7 +34,6 @@ Want to explore the Upside Down locally? Follow these steps:
    ```bash
    git clone [https://github.com/Aadityya07/interactive-portfolio.git](https://github.com/Aadityya07/interactive-portfolio.git)
    cd interactive-portfolio
-````
 
 2.  **Install dependencies**
 
