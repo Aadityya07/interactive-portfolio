@@ -9,16 +9,25 @@ import ProjectsSection from './components/Projects/ProjectsSection';
 import SkillsSection from './components/Skills/SkillsSection'; 
 import EducationSection from './components/Education/EducationSection';
 import AchievementsSection from './components/Achievements/AchievementsSection';
-import ContactSection from './components/Contact/ContactSection'; // NEW IMPORT
+import ContactSection from './components/Contact/ContactSection';
 
 function App() {
   const [loading, setLoading] = useState(true);
 
+  // --- 1. SCROLL LOCK CONTROLLER ---
+  // This watches the "loading" state. Locks scroll during preloader, unlocks when done.
   useEffect(() => {
-    // 1. Prevent standard scrolling during load (Keep this for your Preloader)
-    document.body.style.overflow = 'hidden'; 
+    if (loading) {
+      document.body.style.overflow = 'hidden'; 
+    } else {
+      document.body.style.overflow = 'auto'; // CRITICAL FIX: Unlocks the scroll!
+      document.body.style.overflowX = 'hidden'; // Prevents side-scrolling glitches
+    }
+  }, [loading]);
 
-    // --- THE ANTI-COPY SHIELD ---
+  // --- 2. THE ANTI-COPY SHIELD ---
+  // This runs only once when the website first opens.
+  useEffect(() => {
     const handleContextMenu = (e) => e.preventDefault();
     const handleDragStart = (e) => {
       if (e.target.tagName === 'IMG') e.preventDefault();
@@ -34,9 +43,7 @@ function App() {
       }
     };
 
-    // 2. THE DEVELOPER BACKDOOR
-    // import.meta.env.DEV is true when you run `npm run dev`. 
-    // It is false when you deploy to Vercel/Netlify/GitHub Pages.
+    // THE DEVELOPER BACKDOOR
     const isLocalhost = import.meta.env.DEV;
 
     if (!isLocalhost) {
@@ -72,8 +79,6 @@ function App() {
       <SkillsSection />
       <EducationSection />
       <AchievementsSection />
-      
-      {/* 8. The Grand Finale */}
       <ContactSection />
       
     </main>
