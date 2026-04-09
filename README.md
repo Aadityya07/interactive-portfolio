@@ -2,7 +2,7 @@
 
 > A highly immersive, narrative-driven personal portfolio built to bridge the gap between advanced web engineering and cinematic storytelling. 
 
-🔗 **[Live Demo:](#)**  *https://aditya-yadav-dev.vercel.app/*
+🔗 **[ENTER THE PORTAL (Live Demo)](https://aditya-yadav-dev.vercel.app/)**
 
 ![Portfolio Theme](https://img.shields.io/badge/Theme-Sci--Fi%20%2F%20Cinematic-ed1c24?style=for-the-badge)
 ![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20GSAP%20%7C%20Vite-blue?style=for-the-badge)
